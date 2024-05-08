@@ -31,7 +31,7 @@ def calculate():
         main_entry.insert(0,result)
     except ZeroDivisionError:
         messagebox.showerror("ERROR", "0 cannot be devided")
-    else:
+    except:
         messagebox.showerror("ERROR", "please enter valid values")
   
         
@@ -90,15 +90,6 @@ division_button.place(x=220, y=215)
 
 clear_button = customtkinter.CTkButton(app, text="C", command=clear,  width=60)
 clear_button.place(x=150, y=215)
-
-
-
-
-
-
-
-
-
 
 app.mainloop()
 
